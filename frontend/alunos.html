@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Alunos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Professores</a>
+        <a href="alunos.html">Alunos</a>
+    </nav>
+
+    <h1>Alunos Cadastrados</h1>
+    <button id="addAlunoBtn">Adicionar Aluno</button>
+
+    <table id="alunosTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Situação</th>
+                <th>Responsável</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os alunos serão listados aqui via JS -->
+        </tbody>
+    </table>
+
+    <!-- Modal para adicionar/editar aluno -->
+    <div id="alunoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitleAluno">Adicionar Aluno</h2>
+            <form id="alunoForm">
+                <label for="nameAluno">Nome:</label>
+                <input type="text" id="nameAluno" name="name" required>
+
+                <label for="profile">Situação:</label>
+                <select id="profile" name="profile" required>
+                    <option value="admin">Fisicamente Ativo</option>
+                    <option value="prof">Sedentário</option>
+                </select>
+
+                <!--<label for="situation">Situação:</label>
+                <input type="text" id="situation" name="situation" required> -->
+
+                <label for="responsible">Responsável:</label>
+                <select id="responsible" name="responsible" required>
+                    <!-- Os usuários serão carregados aqui via JS -->
+                </select>
+
+                <button type="submit" id="saveAlunoBtn">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/aluno.js"></script>
+</body>
+</html>

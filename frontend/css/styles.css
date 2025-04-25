@@ -16,7 +16,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #4c4eaf;
 }
 
 th, td {
@@ -26,34 +26,34 @@ th, td {
 
 button {
     padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4c4eaf;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #04800a;
 }
 
 /* Menu de navegação */
 .navbar {
-    background-color: #333;
+    background-color: #4c4eaf;
     overflow: hidden;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 /* Estilo para o modal */
